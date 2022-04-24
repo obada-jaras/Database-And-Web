@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="600.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainMenu.MainMenuController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="600.0">
+               <children>
+                  <Label prefHeight="90.0" prefWidth="498.0" text="Store Management System" textAlignment="CENTER" textFill="#32a2b0">
+                     <font>
+                        <Font name="Rockwell Condensed" size="58.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Button fx:id="BTN_manage" layoutX="225.0" layoutY="145.0" mnemonicParsing="false" onAction="#manage" prefHeight="42.0" prefWidth="150.0" styleClass="enabled-button" text="Manage" AnchorPane.leftAnchor="225.0" AnchorPane.rightAnchor="225.0" />
+            <Line endX="300.0" layoutX="300.0" layoutY="240.0" startX="-300.0" styleClass="line" />
+            <Button layoutX="497.0" layoutY="648.0" mnemonicParsing="false" onAction="#logOut" prefHeight="26.0" prefWidth="78.0" styleClass="exit-button" text="Log Out" />
+            <Button fx:id="BTN_buySell" layoutX="225.0" layoutY="295.0" mnemonicParsing="false" onAction="#toOrderWindow" prefHeight="42.0" prefWidth="150.0" styleClass="enabled-button" text="BUY/RETURN" AnchorPane.bottomAnchor="362.6" AnchorPane.leftAnchor="225.0" AnchorPane.rightAnchor="225.0" AnchorPane.topAnchor="295.0" />
+            <Button fx:id="BTN_manageOrders" layoutX="225.0" layoutY="377.0" mnemonicParsing="false" onAction="#toManageOrdersWindow" prefHeight="42.0" prefWidth="150.0" styleClass="enabled-button" text="Manage Orders" AnchorPane.bottomAnchor="280.6" AnchorPane.leftAnchor="225.0" AnchorPane.rightAnchor="225.0" />
+            <Line endX="300.0" layoutX="300.0" layoutY="480.0" startX="-300.0" styleClass="line" />
+            <Button fx:id="BTN_statistics" layoutX="167.0" layoutY="545.0" mnemonicParsing="false" onAction="#toStatistics" prefHeight="42.0" prefWidth="210.0" styleClass="enabled-button" text="Statistics" AnchorPane.leftAnchor="225.0" AnchorPane.rightAnchor="225.0" />
+            <Button fx:id="BTN_mngUsers" layoutX="275.0" layoutY="304.0" mnemonicParsing="false" onAction="#manageUsers" styleClass="enabled-button" text="Manage Users" AnchorPane.bottomAnchor="362.6" AnchorPane.leftAnchor="225.0" AnchorPane.rightAnchor="225.0" AnchorPane.topAnchor="295.0" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
