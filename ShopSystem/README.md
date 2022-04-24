@@ -1,4 +1,4 @@
-Java & JavaFx 
+Java & JavaFx + MySQL
 ---
 ---
 ---
