@@ -1,4 +1,9 @@
 Java & JavaFx + MySQL
+Store System features:
+- Login system.
+- Manage customers, employees, items, suppliers, orders.
+- Orders history.
+- Statistics with graphs.
 ---
 ---
 ---
