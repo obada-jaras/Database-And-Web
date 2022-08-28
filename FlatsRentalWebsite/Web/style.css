@@ -1,0 +1,952 @@
+/* set variables colors */
+:root {
+  --color1: #EB5D1E;
+  --color1H: #ffe0d1;
+  --color2: #8B9A46;
+  --color2H: #aeb881;
+  --colorGray: #565661;
+  --colorGrayL: #d4d4d4;
+  --colorGrayLL: #ededed;
+}
+/* end of set variables */
+
+
+/* CSS reset, to remove any browser defaults. */
+* {
+   margin: 0px;
+   padding: 0px;
+}
+
+html, header, footer, nav, main, article, section, figure, figcaption, h1, h2, h3, h4, h5, h6, ul, ol, li,body, div, 
+p, img, a, strong, em, img, table, tr, td, th, tbody, thead, tfoot, col, colgroup, caption, form, input, 
+{
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	border: 0;
+}
+
+html, body {
+	font-family: 'Montserrat', sans-serif;
+	
+}
+
+body {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+html {
+	overflow-x: hidden;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;			/*hide number-input's arrows */
+  margin: 0;
+}
+/* end of css reset */
+
+
+
+
+
+
+
+
+
+
+
+
+/* header */
+header {
+	height: 50px;
+	background-color: var(--colorGray);
+	padding: 10px 10px 10px 25px;
+	position: fixed;
+	width: 100%;
+	box-shadow: 0px 1px 10px black;
+	z-index: 100;
+}
+
+header h1 {
+	font-size: 120%;
+	display: inline;
+	margin: 15px;
+	position: relative;
+	top: -18px;
+	color: white;
+}
+
+header ul {
+	margin: 15px 45px 0 0;
+	float: right;
+  line-height: 50px;
+  margin-top: 0;
+}
+
+header li {
+	float: none;
+  display: inline-block;
+  margin-left: 50px;
+  font-size: 120%;
+}
+
+header a {
+	color: var(--color1);
+	text-decoration: none;
+}
+
+header a:hover {
+	color: var(--color1H);
+}
+
+header #selected {
+	color: white;
+}
+
+header .notiIcon {
+	height: 25px;
+	position: relative;
+	top: 4px;
+}
+
+header .notiNumberCirle {
+	float: right;
+	position: relative;
+	left: -11px;
+	top: 4px;
+	background-color: var(--color2);
+	line-height: 100%;
+	height: 17px;
+	width: 17px;
+	font-size: 80%;
+	border-radius: 50%;
+	color: white;
+}
+
+header .notiNumberCirle p {
+	position: relative;
+	left: 4px;
+	top: 0.8px;
+}
+/* end of header */
+
+
+
+/* footer */
+footer {
+	height: 70px;
+	width: 100%;
+	background-color: var(--colorGrayL);
+	text-align: center;
+	font-weight: bold;
+	font-size: 85%;
+	padding-top: 17px;
+	color:  var(--color1);
+	margin-top: auto;
+	position: relative;
+	top: 100px;
+}
+
+footer img {
+	margin-top: 5px;
+}
+
+footer a {
+	color:  var(--color1);
+}
+/* end of footer */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* home page - main */
+main {
+	position: relative;
+	top: 70px;
+}
+
+main#homeMain #firstView {
+	text-align: center;
+	font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+main#homeMain #firstView img {
+	width: 99vw;
+	user-drag: none;  
+ 	user-select: none;
+ 	background-attachment: fixed;
+}
+
+main#homeMain #firstView h2, main#homeMain #firstView h3{
+	color: white;
+	position: relative;
+	top: -400px;
+}
+
+main#homeMain #firstView h2{
+	position: relative;
+	left: -40px;
+	margin-bottom: 7px;
+}
+
+
+
+
+
+main .secondView {
+	text-align: center;
+}
+
+main .secondView figure {
+	margin: 0 25px 100px 25px;
+}
+
+main .secondView img {
+	height: 500px;
+	width: 500px;
+	border-radius: 25px;
+	border: 2px solid var(--color1);
+}
+
+main .secondView img:hover {
+	border: 2px solid black;
+	box-shadow: 0px 0px 10px black;
+}
+
+main .secondView figcaption {
+	text-align: center;
+	font-size: 200%;
+	font-weight: bold;
+}
+
+main .secondView a {
+	color: var(--color1);
+	text-decoration: none;
+}
+
+
+/**** registerType page - main ****/
+main#registerType .secondView {
+	display: flex;
+	align-items: center;
+  justify-content: center;
+}
+
+
+main#registerType .secondView figure {
+	margin: 120px 100px 0 100px;
+}
+
+main#registerType .secondView img {
+	height: 300px;
+	width: 300px;
+}
+
+main#registerType .secondView figcaption {
+	font-size: 120%;
+}
+/**** end of registerType page - main ****/
+
+
+
+
+main#homeMain #thirdView {
+	text-align: center;
+}
+
+main#homeMain #thirdView h3 {
+	margin: 180px;
+}
+
+main#homeMain #thirdView a {
+	color: var(--color2);
+}
+/* end of home page - main */
+
+
+
+
+
+
+
+
+/* registration page - main */
+main.registration, main#addFlat, main#addTime {
+	text-align: center;
+}
+
+
+main form div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+main form legend {
+	color: var(--color1);
+	font-size: 120%;
+	font-weight: bold;
+}
+
+main form fieldset {
+	display: inline;
+	margin: 50px 15px 0 15px;
+	height: 300px;
+	width: 450px;
+	border-color: var(--color1);
+	border-width: 4px;
+	border-radius: 20px;
+	padding-top: 10px;
+}
+
+main.registration form div#eAccount {
+	width: 100%;
+	display: block;
+}
+
+main.registration form #eAccount fieldset {
+	height: 200px;
+}
+
+main form label {
+	display: inline-block;
+	text-align: left;
+	width: 200px;
+	font-size: 140%;
+}
+
+main form input, main form textArea {
+	border-width: 2px;
+	width: 190px;
+	height: 30px;
+	border-radius: 14px;
+	padding: 0 0 0 5px;
+	outline: none;
+}
+
+main form input:focus, main form textArea:focus {
+	border-color: var(--color1);
+	background-color: var(--colorGrayL);
+}
+
+
+main.registration form p {
+	margin: 20px;
+}
+
+main form span {
+	color: red;
+}
+
+main form input[type="submit"]{
+	background-color: var(--color1);
+	color: white;
+	border-color: transparent;
+	font-weight: bold;
+	height: 50px;
+	margin-top: 20px;
+	margin-bottom: 70px;
+}
+
+main form input[type="submit"]:hover {
+	background-color: var(--color1H);
+	color: var(--color1);
+	cursor: pointer;
+}
+
+main.registration form li {
+	font-size: 65%;
+	text-align: left;
+	margin-left: 50px;
+}
+
+main a {
+	color: var(--color1);
+}
+
+
+#login footer {
+	position: absolute;
+	bottom: 0;
+}
+/* end of registration page */
+
+
+
+
+
+
+
+
+/* add flat page - main */
+main#addFlat fieldset{
+	margin: 50px;
+	padding: 30px 10px 30px 10px;
+	display: block;
+	height: auto;
+	width: 650px;
+	border-color: var(--color1);
+	border-width: 4px;
+	border-radius: 20px;
+}
+
+main#addFlat label {
+	width: 300px;
+}
+
+main#addFlat input, main#addFlat textArea{
+	margin: 10px;
+	width: 300px;
+	height: 30px;
+}
+
+main#addFlat textArea{
+	height: 60px;
+	vertical-align: middle;
+	resize: vertical;
+}
+
+
+main form fieldset#has {
+	width: 300px;
+	text-align: left;
+}
+
+main form fieldset#has label {
+	width: 220px;
+}
+
+main form fieldset#has input {
+	width: 50px;
+}
+
+main#addFlat form input[type="submit"] {
+	margin-top: 50px;
+	height: 70px;
+}
+
+main form fieldset#photos {
+	height: 255px;
+	text-align: center;
+}
+
+main form fieldset#photos label{
+	width: auto;
+	text-align: center;
+	display: block;
+	font-size: 100%;
+	margin: 20px;
+}
+
+main form fieldset#photos input {
+	width: 200px;
+}
+
+main form fieldset#photos input:hover {
+	background-color: var(--color1H);
+	cursor: pointer;
+}
+
+
+#addTime fieldset {
+	text-align: center;
+	padding: 40px;
+	width: auto;
+	height: 250px;
+}
+
+
+#addTime input{
+	display: block;
+	width: 200px;
+	height: 40px;
+	margin: 10px;
+}
+
+#addTime input[type="submit"]{
+	width: 209px;
+	height: 44px;
+	margin-top: 30px;
+}
+
+#addTime table {
+	width: 300px;
+	margin-top: 0;
+	margin-bottom: 120px;
+}
+/* end of add flat page - main */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* flats page */
+main#flats label {
+	font-size: 100%;
+}
+
+
+main#flats form label {
+	width: auto;
+}
+
+#searchInput {
+	width: 250px;
+}
+
+main#flats #srearchSortBox p {
+	margin: 30px 100px 30px 100px;
+}
+
+main#flats #srearchSortBox input[type="submit"] {
+	margin: 0;
+	width: 100px;
+	height: 34px;
+}
+
+main#flats a button {
+	background-color: var(--color1);
+	width: 130px;
+	height: 34px;
+	border-radius: 15px;
+	color: white;
+	border: white;
+	margin: 30px;
+}
+
+main#flats a button:hover {
+	background-color: var(--color1H);
+	color: var(--color1);
+	cursor: pointer;
+}
+
+main#flats select {
+	height: 30px;
+}
+
+main#flats select optgroup {
+	color: var(--color1);
+	font-weight: bolder;
+}
+
+main#flats select optgroup option {
+	color: black;
+	font-weight: normal;
+}
+
+main#flats #filteringBox {
+	display: block;
+}
+
+
+
+main#flats #filteringBox input {
+	width: 50px;
+	height: 25px;
+}
+
+main#flats #filteringBox input[type="radio"] {
+	width: 30px;
+}
+
+#firstLine p {
+	margin: 30px 65px 20px 65px;
+}
+
+#secondLine p {
+	margin: 0px 65px 30px 65px;
+}
+
+#location {
+	width: 200px;
+}
+
+#furnished label {
+	position: relative;
+	top: -6px;
+}
+
+
+main#flats a {
+	text-decoration: none;
+}
+
+main#flats table {
+	border-collapse: collapse; 
+	text-align: center;
+	vertical-align: middle;
+	align-items: center;
+	width: 90%;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	font-weight: bold;
+}
+
+main#flats {
+	text-align: center;
+}
+
+main#flats table img {
+	height: 150px;
+	width: 150px;
+	border-radius: 20px;
+}
+
+main#flats table img:hover {
+	border: 1px solid black;
+	box-shadow: 0px 0px 4px black;
+}
+
+main#flats table img.moreIcon {
+	height: 24px;
+	width: 24px;
+}
+
+main#flats table img.moreIcon:hover {
+	border: 0;
+	box-shadow: 0;
+}
+
+main#flats table tr {
+  text-align: left;
+  border-top: 1pt solid #616161;
+  height: 180px;
+}
+
+main#flats table tr:first-of-type {
+  border-top: 0;
+}
+
+.imgTD {
+	width: 165px;
+}
+
+.nameTD {
+	width: 40%;
+	font-size: 150%;
+}
+
+.nameTD span {
+	font-size: 65%;
+	color: black;
+}
+
+.dateTD span {
+	text-decoration: underline;
+}
+
+
+#resetBTN {
+	background-color: var(--colorGray);
+	width: auto !important;
+	padding: 5px;
+}
+/* end of flats page */
+
+
+
+
+
+
+
+
+
+/* flat page */
+main#flat, main.notifications {
+	font-family: "Poppins", Arial, sans-serif;
+} 
+
+main#flat p {
+	font-weight: normal;
+} 
+
+
+main#flat aside {
+	width: 20%;
+	position: fixed;
+	margin-top: 87.8px;
+
+}
+
+
+main#flat aside div {
+	margin: 15px;
+	background-color: var(--colorGrayLL);
+	padding: 15px;
+}
+
+main#flat aside#right-aside {
+	width: 22%;
+	right: 0;
+
+}
+
+main#flat aside#left-aside p{
+}
+
+main#flat aside h1, main#flat aside h2 {
+	font-weight: 400;
+}
+
+main#flat aside a {
+	text-decoration: none;
+}
+
+main#flat hr {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	border: 0;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+main#flat #left-aside h1 {
+	font-size: 200%;
+}
+
+
+main#flat div#middle {
+	width: 55%;
+	margin-left: 21.5%;
+}
+
+main#flat .ftco-section {
+	width: 96.6%;
+	margin-left: -15.7px;
+	padding: 0;
+}
+
+#flatDescription, #flatHas, #flatConditions {
+	border: 1pt solid black;
+}
+
+#flatTitle {
+	margin: 20px;
+	font-weight: bold;
+	font-size: 250%;
+}
+
+main#flat #middle p, main#flat #middle li {
+	line-height: 200%;
+}
+
+main#flat #middle section {
+	padding: 30px;
+}
+
+#flatHas, #flatConditions {
+	margin-top: 50px;
+}
+
+main#flat #flatHas div {
+	padding: 20px;
+	margin: 0;
+	display: inline-block;
+	width: 40%;
+}
+
+main#flat #flatHas li img {
+	position: relative;
+	top: 3px;
+	left: 4.5px;
+}
+/* end of flat page */
+
+
+
+
+
+
+
+
+
+
+/* request review page */
+main.requestReview {
+	text-align: center;
+}
+
+main.requestReview table {
+	font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+  text-align: center;
+  margin: auto;
+  margin-top: 50px;
+  font-weight: bold;
+}
+
+main.requestReview table td, main.requestReview table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+main.requestReview table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: var(--color1);
+  color: white;
+}
+
+main.requestReview table tr:nth-child(even) {
+  background-color: var(--colorGrayL);
+}
+
+
+main.requestReview table caption {
+   background-color: #BDBDBD;
+   font-size: 125%;
+   font-weight: bold;
+}
+
+main.requestReview .taken {
+	color: gray;
+	font-weight: normal;
+}
+
+main.requestReview .taken a {
+	color: gray;
+	font-weight: normal;
+	text-decoration: none;
+	pointer-events: none;
+}
+/* end of request review page */
+
+
+
+
+/* booking page */
+main.book form fieldset {
+	height: 350px;
+}
+
+main.book form span {
+	font-size: 50%;
+}
+/* end of booking page */
+
+
+
+
+
+
+/* notifications page */
+main.notifications {
+	padding: 50px;
+}
+
+main.notifications * {
+	font-family: "Poppins", Arial, sans-serif;
+}
+
+main.notifications table caption {
+	line-height: 320%;
+	background-color: var(--color1) !important;
+	color: white;
+	border: 3px solid black;
+	border-bottom: 0;
+}
+
+main.notifications table tr {
+	font-weight: 400;
+}
+
+main.notifications table {
+	width: 85% !important;
+	border: 3px solid;
+	margin:  auto;
+}
+
+.nonReadNotification {
+	font-weight: bold !important;
+}
+
+main.notifications table button {
+	background-color: var(--color1);
+	color: white;
+	height: 40px;
+	width: 90px;
+	border: 0;
+	border-radius: 20px;
+}
+
+main.notifications table button:hover {
+	background-color: var(--color1H);
+	color: var(--color1);
+	cursor: pointer;
+}
+
+main.notifications table .approvedBTN {
+	background-color: gray;
+}
+
+main.notifications table .approvedBTN:hover {
+	cursor: auto;
+	background-color: gray;
+	color: white;
+}
+/* end of notifications page */
+
+
+
+
+
+/* about-us page */
+main#about-us {
+	font-family: "Poppins", Arial, sans-serif;
+	padding: 20px 150px;
+	line-height: 250%;
+}
+
+main#about-us h2 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+main#about-us figcaption {
+	text-align: center;
+	color: gray;
+}
+
+main#about-us section {
+	margin: 50px;
+}
+
+main#about-us section figure {
+	float: right;
+	margin: 70px 0 0 40px;
+}
+
+main#about-us section figure img {
+	border: 5px var(--color1) solid;
+	padding: 0;
+	border-radius: 20px;
+}
+
+/* end of about-us page */
