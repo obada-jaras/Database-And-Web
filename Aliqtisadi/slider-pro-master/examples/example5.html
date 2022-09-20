@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+	<title>Slider Pro</title>
+
+	<link rel="stylesheet" type="text/css" href="../dist/css/slider-pro.min.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="css/examples.css" media="screen" />
+
+	<script type="text/javascript" src="../libs/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="../dist/js/jquery.sliderPro.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function ($) {
+			$('#example5').sliderPro({
+				width: 670,
+				height: 500,
+				orientation: 'vertical',
+				loop: false,
+				arrows: true,
+				buttons: false,
+				thumbnailsPosition: 'right',
+				thumbnailPointer: true,
+				thumbnailWidth: 290,
+				breakpoints: {
+					800: {
+						thumbnailsPosition: 'bottom',
+						thumbnailWidth: 270,
+						thumbnailHeight: 100
+					},
+					500: {
+						thumbnailsPosition: 'bottom',
+						thumbnailWidth: 120,
+						thumbnailHeight: 50
+					}
+				}
+			});
+		});
+	</script>
+
+</head>
+
+<body>
+
+	<div id="example5" class="slider-pro">
+		<div class="sp-slides">
+			<div class="sp-slide">
+				<img class="sp-image" src="../src/css/images/blank.gif"
+					data-src="http://bqworks.net/slider-pro/images/image1_medium.jpg"
+					data-retina="http://bqworks.net/slider-pro/images/image1_large.jpg" />
+
+				<div class="sp-caption">نحو 69 مليون دولار أرباح البنوك المحلية في 6 أشهر</div>
+			</div>
+
+			<div class="sp-slide">
+				<img class="sp-image" src="../src/css/images/blank.gif"
+					data-src="http://bqworks.net/slider-pro/images/image2_medium.jpg"
+					data-retina="http://bqworks.net/slider-pro/images/image2_large.jpg" />
+
+				<div class="sp-caption">22 مليون دولار أرباح القطاع الصناعي في بورصة فلسطين
+				</div>
+			</div>
+
+			<div class="sp-slide">
+				<img class="sp-image" src="../src/css/images/blank.gif"
+					data-src="http://bqworks.net/slider-pro/images/image3_medium.jpg"
+					data-retina="http://bqworks.net/slider-pro/images/image3_large.jpg" />
+
+				<div class="sp-caption">(فيديو) - سائقو العمومي يدفعون ثمن الإضراب في جامعة بيرزيت
+				</div>
+			</div>
+
+			<div class="sp-slide">
+				<img class="sp-image" src="../src/css/images/blank.gif"
+					data-src="http://bqworks.net/slider-pro/images/image4_medium.jpg"
+					data-retina="http://bqworks.net/slider-pro/images/image4_large.jpg" />
+
+				<div class="sp-caption">بسبب "الصناعة".. تحسن مؤشر سلطة النقد لدورة الأعمال في فلسطين
+				</div>
+			</div>
+		</div>
+
+		<div class="sp-thumbnails">
+			<div class="sp-thumbnail">
+				<div class="sp-thumbnail-text">
+					<div class="sp-thumbnail-description">نحو 69 مليون دولار أرباح البنوك المحلية في 6 أشهر
+					</div>
+				</div>
+			</div>
+
+			<div class="sp-thumbnail">
+				<div class="sp-thumbnail-text">
+					<div class="sp-thumbnail-description">22 مليون دولار أرباح القطاع الصناعي في بورصة فلسطين
+					</div>
+				</div>
+			</div>
+
+			<div class="sp-thumbnail">
+				<div class="sp-thumbnail-text">
+					<div class="sp-thumbnail-description">(فيديو) - سائقو العمومي يدفعون ثمن الإضراب في جامعة بيرزيت
+					</div>
+				</div>
+			</div>
+
+			<div class="sp-thumbnail">
+				<div class="sp-thumbnail-text">
+					<div class="sp-thumbnail-description">بسبب "الصناعة".. تحسن مؤشر سلطة النقد لدورة الأعمال في فلسطين
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>
